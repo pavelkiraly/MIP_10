@@ -15,15 +15,15 @@
 
 \pagestyle{headings}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Motion Capture\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
 
-\author{Meno Priezvisko\\[2pt]
+\author{Pavel Király\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{...@stuba.sk}}
+	{\small \texttt{xkiralyp@stuba.sk}}
 	}
 
-\date{\small 30. september 2015} % upravte
+\date{\small 30. september 2022} % upravte
 
 
 
@@ -39,12 +39,11 @@
 
 \section{Úvod}
 
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+Bavíme sa o zachytávaní/ snímaní pohybu v hrách. 
 
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
+Technológia Motion Capture je prostriedok na urýchlenie vývoja hier a tak isto aby pohyby postáv boli čo najpodobnejšie realite. Táto technológia sa využíva v EA Sports hrách ako napríklad NBA2K. Vývojári hier si zavolajú basketbalové hviezdy, ktoré si oblečú čierny oblek s reflektujúcimi markermi ( biele žiariace značky ). Herec je obklopený kamerami, ktoré zachytávajú špecifickú značku, pri určitom pohybe.
+Nasnímané pohyby sa ukladajú do počítača a vývojári získajú kostru pohybov herca a dokážu ich preniesť na modely postáv v hre, čím vytvárajú animácie pre postavy. Táto technológia teda neskutočným spôsobom pomáha vývojárom hier a je to budúcnosť produkovanie hier. 
+
 
 
 
@@ -54,7 +53,7 @@ Z obr.~\ref{f:rozhod} je všetko jasné.
 
 \begin{figure*}[tbh]
 \centering
-%\includegraphics[scale=1.0]{diagram.pdf}
+\includegraphics[scale=1.0]{new.pdf}
 Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
 \caption{Rozhodujúci argument.}
 \label{f:rozhod}
@@ -120,5 +119,10 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
+@misc{PLP-Framework,
+	author = "Software Engineering Institute, Carnegie Mellon University",
+	title = "A Framework for Software Product Line Practice---Version 5.0",
+	howpublished = "\url{http://www.sei.cmu.edu/productlines/frame_report/}",
+}
 \bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
